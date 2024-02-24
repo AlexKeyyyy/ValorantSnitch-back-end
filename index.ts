@@ -36,6 +36,6 @@ app.post('/api', async (req,res) => {
     
 })
 
-const server = app.listen(PORT, () => {
-    console.log(`Listening on PORT ${PORT}`)
+const server = app.listen(process.env.REACT_APP_API_URL, () => {
+    console.log(`Listening on PORT ${process.env.REACT_APP_API_URL}`)
 })
